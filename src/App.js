@@ -8,10 +8,16 @@ import Footer from './components/footer';
 
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('about');
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  }
+  
   return (
     <div className="Portfolio">
-      <Header />
-      <Portfolio />
+      <Header ={ handlePageChange }/>
+      <Portfolio currentPage={ currentPage }/>
       <Footer />
       
     </div>
