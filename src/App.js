@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
-import Projects from './components/projects';
+import Header from './components/navbar';
+import Portfolio from './components/projects';
+import Footer from './components/footer';
+
 
 
 
 function App() {
   return (
-    <div className="projects">
-      <Projects />
+    <div className="Portfolio">
+      <Header />
+      <Portfolio />
+      <Footer />
+      
     </div>
   );
 }
