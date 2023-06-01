@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Bio from './components/Projects/Bio';
-import Projects from './components/Projects/ProjectInfo';
+import Bio from './Projects/Bio';
+import Projects from './Projects/ProjectInfo';
 
 function Project({ currentPage }) {
   const renderPage = () => {
