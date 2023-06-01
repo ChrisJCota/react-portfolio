@@ -7,7 +7,7 @@ function Project({ currentPage }) {
     switch (currentPage) {
       case 'about':
         return <Bio />;
-      case 'contact':
+      case 'projects':
         return <Projects />;
       default:
         return null;
