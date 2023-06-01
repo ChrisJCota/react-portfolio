@@ -35,3 +35,5 @@ export default function App() {
     </MDBFooter>
   );
 }
+
+export default Footer;
