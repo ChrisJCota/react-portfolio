@@ -16,7 +16,7 @@ function App() {
   
   return (
     <div className="Portfolio">
-      <Header ={ handlePageChange }/>
+      <Header handlePageChange={ handlePageChange }/>
       <Portfolio currentPage={ currentPage }/>
       <Footer />
       
