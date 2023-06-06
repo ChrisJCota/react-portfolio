@@ -17,4 +17,4 @@ function Project({ currentPage }) {
   return <div>{renderPage()}</div>;
 }
 
-export default Portfolio;
+export default Project;
