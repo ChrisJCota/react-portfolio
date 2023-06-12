@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import './App.css';
 import Header from './components/navbar';
 import Project from './components/projects';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import Footer from './components/footer';
 
 
