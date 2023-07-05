@@ -8,17 +8,15 @@ import Container from 'react-bootstrap/Container';
 function Projects() {
     return (
         <Container className="projects-section">
-            <Container>
-                <h1>
-                    Welcome to my <strong>Projects!</strong>
-                </h1>
+            <Container className="justify-content-center">
+            <h2 className="display-3 nav-header">Welcome to my Projects!</h2>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     <Col md={4} className="project-card">
                         <DeployedCards
                             title="Text-Editor"
                             description="This project is a text editor which allows the user to create code or notes and retrieve them later on."
                             gitRepo="https://github.com/ChrisJCota/text-editor"
-                            deployedLink="https://my-text-editor-with-pwa.herokuapp.com/">
+                            >
 
                         </DeployedCards>
                     </Col>
@@ -28,7 +26,7 @@ function Projects() {
                             title="Phudi"
                             description="This collaborative project is a food reservation app that allows users to login and book a reservation. Then store that reservation on their personal site which shows their previous reservations."
                             gitRepo="https://github.com/ChrisJCota/phudi"
-                            deployedLink="https://phudireservations.herokuapp.com/">
+                            >
 
                         </DeployedCards>
                     </Col>
@@ -56,7 +54,7 @@ function Projects() {
                             title="JS Quiz"
                             description="One of my early projects creating a JS quiz using tools from Javascript, utilizing local storage to store data and practicing implementing strategies to create interactive webpages through JS."
                             gitRepo="https://github.com/ChrisJCota/JS-Quiz"
-                            deployedLink="https://chrisjcota.github.io/JS-Quiz/">
+                            >
 
                         </DeployedCards>
                     </Col>

@@ -13,7 +13,7 @@ function DeployedCards(props) {
           {props.description}
         </Card.Text>
         <Card.Link href={props.gitRepo} target="_blank">Github Repo</Card.Link>
-        <Card.Link href={props.deployedLink} target="_blank">Deployed</Card.Link>
+        
       </Card.Body>
     </Card>
 
