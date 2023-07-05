@@ -1,3 +1,11 @@
 body{
-    background-color: bisque;
+    background-color: lightblue;
+}
+.projects-section{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.project-card{
+    text-align: left;
 }
