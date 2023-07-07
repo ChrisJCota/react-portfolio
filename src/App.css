@@ -9,3 +9,29 @@ body{
 .project-card{
     text-align: left;
 }
+.App {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+
+  
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33,37,41);
+    
+  }
+  
+  .footer .nav-link {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    
+  }

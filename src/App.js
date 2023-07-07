@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/navbar';
 import Project from './components/projects';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import Footer from './components/footer';
+import Footer from './components/footer';
 
 
 
@@ -17,10 +17,13 @@ function App() {
 
   return (
     <div className="Portfolio">
-      <Header handlePageChange={handlePageChange} />
-      <Project currentPage={currentPage} />
-      {/* <Footer /> */}
-
+      <div className="content">
+        <Header handlePageChange={handlePageChange} />
+        <Project currentPage={currentPage} />
+      </div>
+      <div className="footer">
+      {<Footer handlePageChange={handlePageChange}/>}
+      </div>
     </div>
   );
 }

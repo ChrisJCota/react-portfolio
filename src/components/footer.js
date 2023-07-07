@@ -1,40 +1,45 @@
-/* import React from 'react';
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-  MDBIcon,
-  MDBBtn
-} from 'mdb-react-ui-kit';
-
-export default function Footer() {
-  return (
-    <MDBFooter className='bg-dark text-center text-white'>
-      <MDBContainer className='p-4 pb-0'>
-        <section className='mb-4'>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='google' />
-          </MDBBtn>
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='instagram' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='linkedin-in' />
-          </MDBBtn>
-
-          <MDBBtn outline color="light" floating className='m-1' href='#!' role='button'>
-            <MDBIcon fab icon='github' />
-          </MDBBtn>
-        </section>
-      </MDBContainer>
+import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub , faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFolder , faFile , faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons';
 
 
-    </MDBFooter>
-  );
-}
 
 
- */
+function Footer(props){
+  return(
+  <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">
+            
+          </Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link onClick={() => props.handlePageChange("about")}>
+              <FontAwesomeIcon icon={faHome}>
+                </FontAwesomeIcon>
+                </Nav.Link>
+            <Nav.Link onClick={() => props.handlePageChange("projects")}>
+              <FontAwesomeIcon icon={faFolder}>
+              </FontAwesomeIcon>
+            </Nav.Link>
+            <Nav.Link href="https://github.com/ChrisJCota" target="_blank">
+              <FontAwesomeIcon icon={faGithub}>
+              </FontAwesomeIcon>
+              </Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/christopherjcota/" target="_blank">
+              <FontAwesomeIcon icon={faLinkedin}>
+              </FontAwesomeIcon>
+              </Nav.Link>
+              <Nav.Link href="mailto:chrisjocota@gmail.com?subject=Mail From Portfolio" target="_blank">
+              <FontAwesomeIcon icon={faEnvelope}>
+              </FontAwesomeIcon>
+              </Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+      );
+      }
+export default Footer;
