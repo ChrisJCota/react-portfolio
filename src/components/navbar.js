@@ -14,13 +14,13 @@ import { faFolder , faFile , faEnvelope} from '@fortawesome/free-solid-svg-icons
 function Header(props) {
     return (
         <Navbar bg="dark" variant="dark" expand="lg">
-            <Container>
+            <Container >
                 <Navbar.Brand onClick={() => props.handlePageChange("about")}>
                     Chris' Portfolio
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto" >
                         <Nav.Link onClick={() => props.handlePageChange("projects")}>
                             <FontAwesomeIcon icon={faFolder}> </FontAwesomeIcon>
                             <span></span> Projects
