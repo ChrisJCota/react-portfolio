@@ -1,6 +1,18 @@
 body{
-    background-color: lightblue;
+  
+    background: url(./components/assets/photos/background-image.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+.bio{
+  color: aliceblue;
+  font-weight: bold;
+  
+
+}
+
 .projects-section{
     justify-content: center;
     align-items: center;
@@ -13,11 +25,15 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: transparent;
   }
-  
+  .nav-header{
+    color: aliceblue;
+  }
 
   
   .footer {
+    margin-top: 50px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -34,4 +50,9 @@ body{
     align-items: center;
     margin: 0 10px;
     
+  }
+
+  .nav-header{
+    margin-bottom: 50px;
+    margin-top: 25px;
   }
